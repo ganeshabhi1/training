@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>collecting information of a person</title>
+    <script>
+        function person(name, empid, DOB,mobile, address,course) {
+            this.name = name;
+            this.empid = empid;
+            this.DOB = DOB;
+            this.mobile = mobile;
+            this.address = address;
+            this.course = course;
+
+            this.changeaddress = changeaddress;
+            function changeaddress(otheraddress) {
+                this.address = otheraddress;
+            }
+        }
+        e1 = new person();
+        e1.name = prompt("enter a name");
+        e1.empid = parseInt(prompt("enter a  empid"));
+        e1.DOB = parseInt(prompt("enter a DOB"));
+        e1.mobile = parseInt(prompt("enter a mobile number"));
+        e1.address = prompt("enter a address");
+        e1.course = prompt("enter a course");
+        var addr = prompt("do you want to change address");
+        document.write("<br>" + e1.name + "<br> " + e1.empid + "<br> " + e1.DOB + "<br> " + e1.mobile + "<br> " + e1.address + "<br> " + e1.course);
+        document.write("<br>after changing address");
+        e1.changeaddress(addr);
+        document.write("<br>" + e1.name + "<br> " + e1.empid + "<br> " + e1.DOB + "<br> " + e1.mobile + "<br> " + e1.address + "<br> " + e1.course);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

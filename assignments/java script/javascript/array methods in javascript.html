@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <title>array methods</title>
+    <script>
+        const cars = ["audi", "valvo", "bwm", "benz", "shift"];
+        for (let i = 0; i < cars.length; i++) {
+            document.write(cars[i]+"<br>");
+        }
+        cars.reverse();
+        document.write("after reverse an array the elements are <br>");
+        for (let i = 0; i < cars.length; i++) {
+            document.write(cars[i] + "<br>");
+        }
+        cars.push("tata");
+        document.write("after push an array the elements are <br>");
+        for (let i = 0; i < cars.length; i++) {
+            document.write(cars[i] + "<br>");
+        }
+        cars.pop();
+        document.write("after pop an array the elements are <br>");
+        for (let i = 0; i < cars.length; i++) {
+            document.write(cars[i] + "<br>");
+        }
+        cars.shift();
+        document.write("after shift an array the elements are <br>");
+        for (let i = 0; i < cars.length; i++) {
+            document.write(cars[i] + "<br>");
+        }
+        cars.unshift("alto");
+        document.write("after unshift an array the elements are <br>");
+        for (let i = 0; i < cars.length; i++) {
+            document.write(cars[i] + "<br>");
+        }
+        cars.splice(1, 2, 3, "verna", "toyoyo", "alto");
+        document.write("after splice an array the elements are <br>");
+        for (let i = 0; i < cars.length; i++) {
+            document.write(cars[i] + "<br>");
+        }
+        const c=cars.slice(2, 5)
+        document.write("after slice an array the elements are <br>");
+        for (let i = 0; i < c.length; i++) {
+            document.write(c[i] + "<br>");
+        }
+        var m = cars.lastIndexOf("alto");
+        document.write("after lastIndexOf the index is <br>");
+        document.write(m);
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

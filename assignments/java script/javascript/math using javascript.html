@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <title></title>
+    <script>
+        var num = parseInt(prompt("enter a number"));
+        document.write("the squareroot of number is " + Math.sqrt(num));
+        document.write("<br>the square of number is " + Math.pow(num, 2));
+        document.write("<br>the absolute value of number is " + Math.abs(num, 2));
+        document.write("<br>the area of circle of number is " + (Math.PI * 10 * 10));
+        const a = 23.9755356;
+        document.write("<br>the number 23.975535 fixed to 2 digit  is " + a.toFixed(2));
+        const b = 23.97;
+        document.write("<br>the round least number of 23.97  is " + Math.floor(b));
+        document.write("<br>sin90 is " + Math.sin(90) + " cos90 is" + Math.cos(90));
+        document.write("<br>the log 1 is " + Math.log(1));
+        document.write("<br>the random number between 0 to 1 is " +Math.random() * 1);
+        const d = [];
+        d.length = 5;
+        for (let i = 0; i < d.length; i++) {
+            d[i] = parseInt(prompt("enter a number array number for index" +i));
+        }
+        const f = [];
+        for (let j = 0; j < d.length; j++) {
+            f.push(Math.max(...d[j]));
+        }
+        document.write("<br>largest number in array is " + f[4]);
+        const g = parseInt(prompt("enter a 5 decimal number number "));
+        document.write("<br>maxmum number " + Math.max(g));
+    </script>
+</head>
+<body>
+
+</body>
+</html>

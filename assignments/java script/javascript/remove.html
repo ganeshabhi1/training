@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+
+<html>
+<body>
+
+    <h1>The remove() Method</h1>
+
+    <p>ganesh</p>
+    <p>ganesh</p>
+    <p id="demo">ganesh</p>
+    <p>ganesh</p>
+
+    <p id="demo">ganesh</p>
+
+    <button onclick="myFunction()">Remove paragraph</button>
+
+    <script>
+        function myFunction() {
+            var myobj = document.getElementById("demo");
+            myobj[3].remove();
+            myobj[5].remove();
+        }
+    </script>
+
+</body>
+</html>

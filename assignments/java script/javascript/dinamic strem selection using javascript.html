@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title> form</title>
+</head>
+<body>
+    <h2>student details</h2>
+    <form action="/action_page.php">
+        <label>student name:</label><br>
+        <input type="text" id="demo" name="fname" value="eg:John"><br>
+        <label>student id:</label><br />
+        <input type="number" id="demo" name="lname" value="123"><br>
+        <label>DOB:</label><br>
+        <input type="date" id="demo" name="lname" value="2/1/21"><br>
+        <label>mobile number:</label><br>
+        <input type="number" id="demo" name="lname" value="2389585"><br>
+        <label>address:</label><br>
+        <input type="text" id="lname" name="lname" value="eg:newyork"><br>
+        <label>course</label>
+        <select id="item1" name="Item 1">
+            <option></option>
+            <option value="1">b-tech</option>
+            <option value="2">BE</option>
+        </select><br />
+        <p id="p01"></p>
+        <button onclick="message()">stream</button><br />
+        <input type="submit" onclick="myfunction()" value="submit">
+        <script>
+            function message() {
+                var s = document.getElementById('item1');
+                var i = s.options[s.selectedIndex].value;
+                if (i = 1) {
+                    document.write("1.cse,2.ece,3,mech");
+                }
+                else if (i = 2) {
+                    document.write("1.bse,2.msc,3.cec");
+                }
+
+            }
+            function myfunction() {
+                const message = document.getElementById("p01");
+                message.innerHTML = "";
+                let x = document.getElementById("demo").value;
+                try {
+                    if (x == " ") throw "is empty";
+                }
+                catch (err) {
+                    message.innerHTML = "Input " + err;
+                }
+                finally {
+                    document.getElementById("demo").value = "";
+                }
+            }
+
+        </script><br />
+
+    </form>
+</body>
+</html>

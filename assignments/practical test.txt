@@ -1,0 +1,10 @@
+1
+select w.first_name +' '+ w.last_name as 'worker full name' , t.worker_title
+from  worker_details w join  title t
+on w.worker_id = t.worker_ref_id;
+2
+select w.first_name +' '+ w.last_name as 'worker full name' 
+from  worker_details w 
+where salary  in (select max(SALARY) 
+				from worker_details
+				group by DEPARTMENT);

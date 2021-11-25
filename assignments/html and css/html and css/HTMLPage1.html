@@ -1,0 +1,123 @@
+﻿<!doctype html>
+<html>
+<head>
+    <title> 2nd page</title>
+    <link rel="stylesheet" href="C:\Users\muniganesh.p\Desktop\html and css\form.css">
+    <style>
+       
+
+        #mye {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <form action="/signup" method="post">
+        <header>
+            <h1 id="my">welcome to employee details</h1>
+        </header>
+            <p><a href="#v1">you want video</a></p>
+            <p><a href="#a1">you want audio</a></p>
+            <p><a href="#e1">you want image</a></p>
+        <section>
+            
+            <p class="p1">
+                <label>empid</label>
+                    <input type="number" name="empid" value="eg:123" required><br /><br />
+                    <label>emp name</label>
+                        <input type="text" name="empid" value="eg:john" required><br /><br />
+                        <label>contact number</label>
+                            
+                            <input type="number" name="empid" maxlength="10" required><br /><br />
+                            <label>email</label>
+                                
+                                <input type="email" name="email" required><br /><br />
+            </p>
+              <p id="mye">
+                <label>
+                    technology
+                </label>
+                <select>
+                    <option>b-tech</option>
+                    <option>Be</option>
+                </select>
+
+
+              </p>
+              <artical>
+                <p>
+                    <label> course</label>
+                    <select>
+                        <option>others</option>
+                        <option>cse</option>
+                        <option>ece</option>
+                        <option>mech</option>
+                        <option>EEE</option>
+                    </select>
+                </p>
+                <p>
+                    <label>other facilities</label><br />
+                    yes:
+                    <input type="radio" id="yes" name="yes" value=" yes" requried />
+                    no:
+                    <input type="radio" id="no" name="yes" value="no" required />
+
+
+                </p>
+                <p>
+                    <label>virtual lab</label><br />
+                    yes:
+                    <input type="radio" id="yes" name="no" value=" yes" required />
+                    no:
+                    <input type="radio" id="no" name="no" value="no" required />
+
+
+                </p>
+                <p>
+                    <label>online quiz</label><br />
+                    yes:
+                    <input type="radio" id="yes" name="ga" value=" yes" required />
+                    no:
+                    <input type="radio" id="no" name="ga" value="no" required />
+
+
+                </p>
+                <p>
+                    <label>prefer date</label>
+                    <input type="date" required />
+                </p>
+         
+                <input type="submit" value="submit" />
+                <div align="center">
+                    <p>
+                        <video controls id="v1">
+                            <source src="C:\Users\muniganesh.p\Desktop\html and css\sample-mp4-file.mp4" type="video/mp4" />
+                            <track src="C:\Users\muniganesh.p\Desktop\html and css\sample-mp4-file.mp4" kind="subtitles" srclang="en" label="English">
+                        </video>
+                    </p>
+
+                    <p>
+                        <audio controls id="a1">
+                            <source src="C:\Users\muniganesh.p\Desktop\html and css\titanic-20romantic-23691.mp3" />
+                        </audio>
+                    </p>
+                    <p id="e1">
+                        <figure id="e1">
+                            <img src="C:\Users\muniganesh.p\Desktop\html and css\pexels-photo-1996333.jpeg" alt="horse" width="300px" height="500px" />
+                            <figcaption>fig1:runing horse</figcaption>
+                        </figure>
+                    </p>
+                </div>
+                <footer>
+                    <p><small>i love india and indians</small></p>
+                </footer>
+                <p>
+                    <a href="https://www.youtube.com">youtube</a>
+
+
+                </p>
+            </artical>
+        </section>
+</form>
+</body>
+</html>

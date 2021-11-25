@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <title>adding vowels</title>
+    <script type="text/javascript">
+        var count = 0;
+        function add(name) {
+            for (var i = 0; i < name.length; i++) {
+                if (name[i] == "a" || name[i] == "e" || name[i] == "i" || name[i] == "o" || name[i] == "u") {
+                    count = count + 1;
+                    
+                }
+
+            }
+        }
+        document.write("enter your name");
+        var myname = parseInt( prompt("enter your name"));
+        var result = parseInt(add(myname));
+        document.write();
+    </script>
+</head>
+<body>
+
+</body>
+</html>

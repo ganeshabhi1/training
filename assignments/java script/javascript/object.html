@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>object!!!</title>
+    <script>
+        emp ={id:21, name:"ganesh", salary:3000}
+        document.write(emp.id + "<br> " + emp.name + "<br> " + emp.salary);
+        var emp1 = new Object();
+        emp1.id = 34;
+        emp1.name = "ganeshn naidu";
+        emp1.salary = 236345;
+        document.write("<br>" + emp1.id + "<br> " + emp1.name + "<br> " + emp1.salary);
+        function emp2(id, name, salary) {
+            this.id = id;
+            this.name = name;
+            this.salary = salary;
+        }
+        e = new emp2(2, "ABHI",244);
+        document.write("<br>" + e.id + "<br> " + e.name + "<br> " + e.salary);
+        function emp3(id, name, salary) {
+            this.id = id;
+            this.name = name;
+            this.salary = salary;
+            this.changesalary = changesalary;
+            function changesalary(othersalary) {
+                this.salary = othersalary;
+            }
+        }
+        e1= new emp3();
+        e1.id = parseInt(prompt("enter a id"));
+        e1.name = prompt("enter a name");
+        e1.salary = parseInt(prompt("enter a salary"));
+        e1.changesalary(12345);
+        document.write("<br>" + e1.id + "<br> " + e1.name + "<br> " + e1.salary);
+    </script>
+   
+</head>
+<body>
+
+</body>
+</html>
