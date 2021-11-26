@@ -1,0 +1,23 @@
+﻿ body, h1, h2, h3, h4, h5 {
+        font-family: "Poppins", sans-serif
+        
+        color: #00ff00;
+    }
+
+    body {
+        font-size: 16px;
+        height: 200px;
+        background-color: #cccccc;
+        background-image: linear-gradient(cyan, green , yellow);
+    }
+
+    .w3-half img {
+        margin-bottom: -6px;
+        margin-top: 16px;
+        opacity: 0.8;
+        cursor: pointer
+    }
+
+     .w3-half img:hover {
+            opacity: 1
+     }
