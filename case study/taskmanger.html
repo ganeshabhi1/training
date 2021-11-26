@@ -1,0 +1,264 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<title>Admin Dashboard</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link rel="stylesheet" href="C:\Users\muniganesh.p\source\repos\admin status page .css">
+<link rel="stylesheet" type="text/css" href="C:\Users\vadhi\Desktop\websiteeeeeee\case_study\css\index.CSS">
+<body align="left">
+    <div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+
+        <div class="w3-container" style="margin-top:80px" id="showcase">
+            <h1 class="w3-jumbo"><b>ganesh industries</b></h1>
+            <h1 class="w3-xxxlarge w3-text-blue"><b>Welcome to Admin page!</b></h1>
+
+        </div>
+        <p>Greetings Admin,</p>
+        <p>Welcome to ganesh softwares task verification page.</p>
+        <p> Let's Start!!</p>
+        <br>
+        <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+            <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+            <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+                <img id="img01" class="w3-image">
+                <p id="caption"></p>
+            </div>
+        </div>
+
+        <div class="w3-container" id="checkp" style="margin-top:75px">
+            <h1 class="w3-xxxlarge w3-text-blue"><b>Check progress </b></h1>
+
+            <p>the progress of the tasks </p>
+        </div>
+
+        <div class="w3-row-padding">
+            <div class="w3-half w3-margin-bottom">
+                <ul class="w3-ul w3-light-grey w3-center">
+                    <li class="w3-red w3-xlarge w3-padding-32">In Progres</li>
+                    <li class="w3-padding-16" id="demo"></li>
+                </ul>
+            </div>
+
+            <div class="w3-half">
+                <ul class="w3-ul w3-light-grey w3-center">
+                    <li class="w3-orange w3-xlarge w3-padding-32">Completed</li>
+                    <li class="w3-padding-16"></li>
+
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="w3-container" id="create" style="margin-top:75px">
+            <h1 class="w3-xxxlarge w3-text-blue"><b>Create Task</b></h1>
+
+            <form id="frm1">
+                <div class="container">
+                    <div class="split left">
+
+                        <label>Activity ID: </label>
+                        <input type="text" placeholder="Enter Activity ID" required>
+                        <br>
+                        <br>
+                        <label>Activity Name : </label>
+
+                        <input type="text" placeholder="Enter Activity Name" required>
+                        <br>
+                        <br>
+                        <label>Activity Owner : </label>
+                        <select name="owners">
+                            <option value="default">Select An owner</option>
+                            <option value="Priyanka">ganesh</option>
+                            <option value="Supriya">abhinaya</option>
+                            <option value="Ramesh">Ramya</option>
+                            <option value="Harish">gopi</option>
+                        </select>
+                        <br>
+                        <br>
+                        <label>Description of the Activity : </label>
+                        <br>
+                        <textarea id="w3review" name="w3review" rows="4" cols="50" placeholder="Enter Activity Name" name="Description of activity"></textarea>
+                        <br>
+                        <br>
+                        <label>Priority :</label>
+                        <select name="owners">
+                            <option value="default">Select Priotity</option>
+                            <option value="Tim" type="color">Low</option>
+                            <option value="John">Urgent</option>
+                            <option value="Ramesh">Highly Important</option>
+                        </select>
+                        <br>
+                        <br>
+                    </div>
+
+
+                    <div class="split right">
+
+                        <label>Activity Start Date: </label>
+
+                        <input type="date" placeholder="Enter Activity Name" name="Activity name" required><br />
+
+                        <label>   Activity End Date: </label>
+                        <input type="date" placeholder="Enter Activity Name" name="Activity name" required>
+                        <br>
+                        <br>
+                        <label>Activity status : </label>
+
+                        <select name="status">
+                            <option value="default">Select Progress</option>
+                            <option value="Priyanka" type="color">Yet to start</option>
+                            <option value="Supriya">In Progress</option>
+                            <option value="Ramesh">Completed</option>
+                        </select>
+                        <br>
+                        <br>
+                        <label>Assign to : </label>
+
+                        <select name="status">
+                            <option value="default">Select from the team</option>
+                            <option value="john" type="color">ganesh</option>
+                            <option value="jane">abhi</option>
+                            <option value="mike">ramya</option>
+                        </select>
+                        <br>
+                        <br>
+                        <label>Last Modified on:  </label>
+
+                        <input type="date" placeholder="Enter Activity Name" name="Activity name" required>
+                        <br>
+                        <br>
+                        <div align="centered">
+                            <input type="button" onclick="myFunction()" value="submit" id="login-button" />
+                            <input type="radio" name="rad" checked="checked"> Update
+                            <input type="radio" name="rad">New
+                            <br>
+                            <br>
+                            <input type="reset" value="Cancel" id="rst-button" />
+                        </div>
+                    </div>
+
+
+                    <br>
+                    <br>
+
+                </div>
+
+
+            </form>
+        </div>
+        <div class="w3-container" id="team" style="margin-top:75px">
+            <h1 class="w3-xxxlarge w3-text-blue"><b>Team</b></h1>
+
+            <div class="w3-row-padding w3-grayscale">
+                <div class="w3-col m4 w3-margin-bottom">
+                    <div class="w3-light-grey">
+                        <img src="C:\Users\muniganesh.p\Downloads\developer-working-icon-free-vector.jpg" alt="ganesh" style="width:50%">
+                        <div class="w3-container">
+                            <h3>ganesh</h3>
+                            <p class="w3-opacity">developer</p>
+                            <p>java developer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w3-col m4 w3-margin-bottom">
+                    <div class="w3-light-grey">
+                        <img src="C:\Users\muniganesh.p\Downloads\tester-icon-vector-isolated-white-background-logo-concept-tester-sign-transparent-background-filled-black-symbol-tester-125796834.jpg" alt="ramya" style="width:50%">
+                        <div class="w3-container">
+                            <h3>ramaya</h3>
+                            <p class="w3-opacity">tester</p>
+                            <p>automation tester</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w3-col m4 w3-margin-bottom">
+                    <div class="w3-light-grey">
+                        <img src="C:\Users\muniganesh.p\Downloads\architect-84-774600.png" alt="abhi" style="width:50%">
+                        <div class="w3-container">
+                            <h3>abhi</h3>
+                            <p class="w3-opacity">Architect</p>
+                            <p>Designer.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w3-col m4 w3-margin-bottom">
+                    <div class="w3-light-grey">
+                        <img src="C:\Users\muniganesh.p\Downloads\istockphoto-1159322945-612x612.jpg" alt="rakesh" style="width:50%">
+                        <div class="w3-container">
+                            <h3>abhi</h3>
+                            <p class="w3-opacity">intern</p>
+                            <p>supporting role</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <div class="w3-container" id="contact" style="margin-top:75px">
+            <h1 class="w3-xxxlarge w3-text-blue"><b>Contact.</b></h1>
+
+            <p>Need help in managing the website? Fill out the form and fill us in with the details. We will get back to you soon!</p>
+            <form action="#" target="_blank">
+
+                <div class="w3-section">
+                    <label>Name</label>
+                    <input class="w3-input w3-border" type="text" name="Name" required>
+                </div>
+                <div class="w3-section">
+                    <label>Email</label>
+                    <input class="w3-input w3-border" type="text" name="Email" required>
+                </div>
+                <div class="w3-section">
+                    <label>Message</label>
+                    <input class="w3-input w3-border" type="text" name="Message" required>
+                </div>
+                <button type="submit" class="w3-button w3-block w3-padding-large w3-blue w3-margin-bottom">Send Email</button>
+            </form>
+        </div>
+
+
+    </div>
+
+    
+    <script type="text/javascript" src="/js/todo.js"></script>
+    <script>
+       
+        function w3_open() {
+            document.getElementById("mySidebar").style.display = "block";
+            document.getElementById("myOverlay").style.display = "block";
+        }
+
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("myOverlay").style.display = "none";
+        }
+
+        
+        function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+        }
+    </script>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("frm1");
+            var text = "";
+            var i;
+            for (i = 0; i < x.length; i++) {
+                text += x.elements[i].value + "<br>";
+            }
+            document.getElementById("demo").innerHTML = text;
+        }
+    </script>
+</body>
+</html>
+
