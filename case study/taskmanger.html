@@ -225,40 +225,6 @@
 
 
     </div>
-
-    
-    <script type="text/javascript" src="/js/todo.js"></script>
-    <script>
-       
-        function w3_open() {
-            document.getElementById("mySidebar").style.display = "block";
-            document.getElementById("myOverlay").style.display = "block";
-        }
-
-        function w3_close() {
-            document.getElementById("mySidebar").style.display = "none";
-            document.getElementById("myOverlay").style.display = "none";
-        }
-
-        
-        function onClick(element) {
-            document.getElementById("img01").src = element.src;
-            document.getElementById("modal01").style.display = "block";
-            var captionText = document.getElementById("caption");
-            captionText.innerHTML = element.alt;
-        }
-    </script>
-    <script>
-        function myFunction() {
-            var x = document.getElementById("frm1");
-            var text = "";
-            var i;
-            for (i = 0; i < x.length; i++) {
-                text += x.elements[i].value + "<br>";
-            }
-            document.getElementById("demo").innerHTML = text;
-        }
-    </script>
 </body>
 </html>
 
