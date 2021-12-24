@@ -25,10 +25,10 @@ public class TaskController {
 	TasksSystemDao taskSystemImpl;
 	@RequestMapping(method = RequestMethod.POST)
 	public String insertTask(@ModelAttribute ("TaskModel") Task task, BindingResult result) throws SQLException{
-	
-		boolean f =TaskSystemImpl.addTask(task);
-		if(f) {
-			String t ="successfully inserted";
+	     boolean s= taskSystemImpl.addTask(task);
+		
+		if(s) {
+			String t ="success";
 			return t;
 		}
 		else {

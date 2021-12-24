@@ -18,13 +18,14 @@ public class TaskSystemImpl implements TasksSystemDao {
 	public boolean addTask(Task task) throws SQLException {
 		boolean flag = false;
 		
-		Connection c = (Connection) con.getConnection();
+		Connection c =  con.getConnection();
 		System.out.println(c);
 		String sql = "insert into taskde (taskname,description) values(?,?)";
 		PreparedStatement st = c.prepareStatement(sql);
 		st.setString(1, task.getName());
 		st.setString(2, task.getDescription());
 		int r = st.executeUpdate();
+		c.close();
 		if (r >0)
 			return true;
 		else 
