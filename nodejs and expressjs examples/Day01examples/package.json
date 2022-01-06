@@ -1,0 +1,14 @@
+{
+  "name": "nodeexaples",
+  "version": "1.0.0",
+  "description": "this is a node exmple",
+  "main": "person.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ganesh",
+  "license": "ISC",
+  "dependencies": {
+    "nodeman": "^1.1.2"
+  }
+}
